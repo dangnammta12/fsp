@@ -1,0 +1,8 @@
+cd FLogService
+make CONF=Release
+cd ..
+
+cd StepCounterService
+make CONF=Release
+cd ..
+

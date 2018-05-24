@@ -1,0 +1,37 @@
+FOLDER="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+#killall -9 $FOLDER/fspstepcounterservice
+
+cd ./DISAgentManagementService
+./runserver start
+cd ../
+
+cd ./DISStorageEngineService
+./runserver start
+cd ../
+
+cd ./DISDirectoryManagementService
+./runserver start
+cd ../
+
+cd ./DISProxyService
+./runserver start
+cd ../
+
+
+cd ./DISAgentService
+./runserver start
+cd ../
+
+
+cd ./DISManagementWeb
+./runserver start
+cd ../
+
+
+cd ./DISApplicationWebService
+./runserver start
+cd ../
+
+
+

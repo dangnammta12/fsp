@@ -1,0 +1,14 @@
+syntax: glob
+*/bin/*
+*/build/*
+*/dist/*
+*.orig
+*/private/*
+.dep.inc
+*/*~*
+*~
+^/tmp/*
+*/FSP_STATIC/*
+*/APP_STATIC/*
+*.log
+DISAgentManagementService/src/crdhn/dis/agent/view/ftl/home_1.html

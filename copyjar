@@ -1,0 +1,22 @@
+DEPLOY_FOLDER="../Deploys/DIS"
+
+JAVA_SERVICE="DISAgentService"
+cp -r ./$JAVA_SERVICE/dist/*.jar $DEPLOY_FOLDER/$JAVA_SERVICE/dist
+
+JAVA_SERVICE="DISApplicationWebService"
+cp -r ./$JAVA_SERVICE/dist/*.jar $DEPLOY_FOLDER/$JAVA_SERVICE/dist
+
+JAVA_SERVICE="DISProxyService"
+cp -r ./$JAVA_SERVICE/dist/*.jar $DEPLOY_FOLDER/$JAVA_SERVICE/dist
+
+JAVA_SERVICE="DISDirectoryManagementService"
+cp -r ./$JAVA_SERVICE/dist/*.jar $DEPLOY_FOLDER/$JAVA_SERVICE/dist
+
+JAVA_SERVICE="DISConfigManagementService"
+cp -r ./$JAVA_SERVICE/dist/*.jar $DEPLOY_FOLDER/$JAVA_SERVICE/dist
+
+JAVA_SERVICE="DISManagementWeb"
+cp -r ./$JAVA_SERVICE/dist/*.jar $DEPLOY_FOLDER/$JAVA_SERVICE/dist
+
+JAVA_SERVICE="DISStorageEngineService"
+cp -r ./$JAVA_SERVICE/dist/*.jar $DEPLOY_FOLDER/$JAVA_SERVICE/dist

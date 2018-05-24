@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="DIP_Backend">
+            <file>file:/home/namdv/devel/WebBaseServer/src/httpservice/WebServer.java</file>
+            <file>file:/home/namdv/devel/WebBaseServer/src/webservlet/HomeServlet.java</file>
+            <file>file:/home/namdv/devel/WebBaseServer/src/render/RenderMain.java</file>
+            <file>file:/home/namdv/devel/WebBaseServer/src/baseclass/ServletBase.java</file>
+            <file>file:/home/namdv/devel/WebBaseServer/html/js/logbca-1.01.js</file>
+        </group>
+        <group/>
+        <group name="DIP">
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/manager/FolderManager.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/configuration/Configuration.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/manager/FileManager.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/utils/Utils.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/test/upload.html</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/conf/production.config.ini</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/render/RenderMain.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/render/upload.html</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/controller/DownloadServlet.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/model/FileInfo.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/render/RenderEngine.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/download/DownloadChunkWorker.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/server/ServiceDaemon.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/conf/development.config.ini</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/manager/LocalStorage.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/utils/ServletUtil.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/upload/UploadChunkWorker.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/conf/puDISKey.pem</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/controller/UploadServlet.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/upload/UploadFileWorker.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/controller/DirectoryController.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/conf/prAgentKey.pem</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/download/DownloadFileWorker.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/utils/HttpRequestUtils.java</file>
+            <file>file:/home/namdv/devel/DIS/DISAgentService/src/crdhn/dis/utils/AsymmetricCryptography.java</file>
+        </group>
+    </open-files>
+</project-private>

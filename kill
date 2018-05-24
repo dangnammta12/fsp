@@ -1,0 +1,40 @@
+FOLDER="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+#killall -9 $FOLDER/fspstepcounterservice
+
+cd ./DISAgentManagementService/
+./runserver stop
+cd ../
+
+cd ./DISStorageEngineService
+./runserver stop
+cd ../
+
+cd ./DISDirectoryManagementService
+./runserver stop
+cd ../
+
+cd ./DISProxyService
+./runserver stop
+cd ../
+
+
+cd ./DISAgentService
+./runserver stop
+cd ../
+
+
+cd ./DISManagementWeb
+./runserver stop
+cd ../
+
+
+cd ./DISApplicationWebService
+./runserver stop
+cd ../
+
+
+
+sleep 1s
+echo "******************** SUMMARY ********************"
+ps -aef|grep dis

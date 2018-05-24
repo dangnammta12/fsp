@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>${text_banner!}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <div style="display:none;" class="loading">Loading&#8230;</div>
+        <div class="wrapper" style="height: auto;">
+            <div class="content-wrapper" style="min-height: 946px;">
+                <section class="content">
+                    <label>Upload file browser</label>
+                    <div class="row">
+                        <form id="form_upload_path" enctype="multipart/form-data" method="POST" action="/upload/browser" role="form" style="padding:10px 100px;" autocomplete="off">
+                       <fieldset>
+                           <div class="form-group">
+                               <label>AccountName:</label>
+                               <input type="text" name="accountName" class="form-control">
+                               <label>AppKey:</label>
+                               <input type="text" name="appKey" class="form-control">
+                               <label>Destination FolderId:</label>
+                               <input type="text" name="parentId" class="form-control">
+                               <label>Choose File:</label>
+                               <input type="file" name="file" style="max-width:450px;">
+                           </div>
+                           <hr>
+                           <button id="upload_path_submit" name="upload_path" class="btn btn-primary" type="submit" data-loading-text="<i class=\'fa fa-spinner fa-spin \'></i> Processing Submit">Upload</button>
+                       </fieldset>
+                   </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+//            $(document).ready(function () {
+//                $(document).on("contextmenu", "#btn_new", function (event) {
+//                    $("#contextMenu").css({
+//                        top: event.clientY - 63+"px",
+//                        left: event.clientX+"px"
+//                    });
+//                    $("#contextMenu").show();
+//                    return false;
+//                });
+//            });
+
+        </script>
+    </body>
+</html>

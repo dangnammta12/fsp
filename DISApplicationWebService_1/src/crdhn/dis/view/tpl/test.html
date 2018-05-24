@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--<link rel="icon" href="../../favicon.ico">-->
+        <title>${text_banner!}</title>
+        <!-- Bootstrap core CSS -->
+        <link href="http://127.0.0.1:1107/static/css/font-awesome.min.css" rel="stylesheet">
+        <link href="http://127.0.0.1:1107/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://127.0.0.1:1107/static/css/bootstrap-dialog.min.css" rel="stylesheet">
+        <!--<link href="http://127.0.0.1:1107/static/css/style_box.css" rel="stylesheet">-->
+        <link href="http://127.0.0.1:1107/static/css/fsp.css" rel="stylesheet">
+
+    </head>
+    <body class="sidebar-mini skin-blue">
+        <div style="display:none;" class="loading">Loading&#8230;</div>
+        <div class="wrapper" style="height: auto;">
+            ${MENU_TOP}
+            ${MENU_LEFT}
+            <div class="content-wrapper" style="min-height: 946px;">
+                <section class="content-header">
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                            <button id="btn_new" type="button" class="btn btn-info  btn-lg dropdown-toggle" data-toggle="dropdown">New
+                                <span class="fa fa-caret-down"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a id="btn_createFolder" href="javascript:void(0);">Create Folder</a></li>
+                                <li><a id="btn_upload" href="javascript:void(0);">Upload File</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-9">
+                            <ol id="menu_horizontal" class="breadcrumb text-right" style="background-color:#ecf0f5;">
+                                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li><a href="#">Tables</a></li>
+                                <li class="active">Data tables</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary" style="margin-bottom:0px; min-height: 946px;">
+                                <div class="box-header hidden">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1 class="page-header">My Storage</h1>
+                                        </div>
+                                        <!-- /.col-md-12 -->
+                                    </div>
+                                </div>
+                                <div id="body_home" class="box-body">
+                                    <!-- content items -->
+                                    ${CONTENT!}
+                                </div>
+                                <ul id="contextMenu" class="dropdown-menu" role="menu" style="display:none" >
+                                    <li><a tabindex="-1" href="#">Action</a></li>
+                                    <li><a tabindex="-1" href="#">Another action</a></li>
+                                    <li><a tabindex="-1" href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- /.end col-lg-12 -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        ${FOOTER!}
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="http://127.0.0.1:1107/static/js/jquery.min.js"></script>
+        <script src="http://127.0.0.1:1107/static/js/bootstrap.min.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="http://127.0.0.1:1107/static/js/html5shiv.min.js"></script>
+            <script type="text/javascript" src="http://127.0.0.1:1107/static/js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="http://127.0.0.1:1107/static/js/bootstrap-dialog.min.js"></script>
+        <!--        <script type="text/javascript" src="http://127.0.0.1:1107/static/js/gonrin.core.js"></script>
+                <script type="text/javascript" src="http://127.0.0.1:1107/static/js/gonrin.query.js"></script>
+                <script type="text/javascript" src="http://127.0.0.1:1107/static/js/gonrin.pagination.js"></script>
+                <script type="text/javascript" src="http://127.0.0.1:1107/static/js/gonrin.grid.js"></script>
+                <script type="text/javascript" src="http://127.0.0.1:1107/static/js/home.js"></script>-->
+        <script>
+            $(document).ready(function () {
+                $(document).on("contextmenu", "#btn_new", function (event) {
+                    $("#contextMenu").css({
+                        top: event.clientY - 63+"px",
+                        left: event.clientX+"px"
+                    });
+                    $("#contextMenu").show();
+                    return false;
+                });
+            });
+
+        </script>
+    </body>
+</html>

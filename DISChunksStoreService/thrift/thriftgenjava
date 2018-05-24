@@ -1,0 +1,3 @@
+rm -f gen-cpp/*
+../../thrift/thrift9/thrift -r --gen java:pure_enums dischunksstoreservice.thrift
+rm -f gen-cpp/*skele*

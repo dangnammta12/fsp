@@ -1,0 +1,3 @@
+rm -r -f gen-java/*
+../../thrift/thrift9/thrift -r --gen java:pure_enums fpmailsenderservice.thrift
+../../thrift/thrift9/thrift -r --gen java:pure_enums flogservice.thrift
